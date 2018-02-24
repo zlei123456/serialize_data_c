@@ -1,0 +1,13 @@
+exeFile是可执行的文件的目录.是有其他文件夹生成的.
+ -createClass.exe   是生成class类的可执行文件.(model目录下的)
+ -readValue.exe     是生成数据文件的可执行文件.(zl.data)
+
+步骤:
+1:填写test.xlsx,
+每个sheet是一个类,第二行填类的成员变量,第三行填变量类型, 第十行开始填数据. 所有数据从c列开始,其他地方留作其他用途.暂时没有.
+2:修改"configMain.json"
+inputFile: xlsx文件名
+outputFile:数据输出名.
+3:执行exeFile/createClass.exe 在model下生成所有的class文件.
+4:执行exeFile/readValue.exe 会生成zl.data.
+5:拷贝model文件夹和zl.data到相应的目录下.

@@ -1,0 +1,11 @@
+{
+	"readBaseCon":{
+		"int":"readInt32BE",
+		"bool":"readBoolean",
+		"short":"readInt16BE",
+		"string":"readStringUTF",
+		"float":"readFloatBE"
+	},
+	"next":12
+
+}
